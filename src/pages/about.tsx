@@ -1,9 +1,11 @@
 import React from "react";
+import Head from "../components/Head";
 import Layout from "../components/Layout";
 import * as styles from "./about.module.scss";
 
 const About = () => (
   <Layout>
+    <Head title="About" />
     <div className={styles.mainAboutBox}>
       <h1>About</h1>
       <p>

@@ -5,6 +5,7 @@ import Sidebar from "../components/Sidebar";
 import * as styles from "./recipeTemp.module.scss";
 import { graphql } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Head from "../components/Head";
 
 export const query = graphql`
   query($slug: String!) {
@@ -29,6 +30,7 @@ const Recipe = ({ data }) => {
 
   return (
     <Layout>
+      <Head title={res.title} />
       <Grid container className={styles.recipeTemp}>
         <Grid
           item

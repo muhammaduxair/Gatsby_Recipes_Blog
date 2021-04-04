@@ -2,6 +2,7 @@ import { Grid, Button } from "@material-ui/core";
 import { ArrowRightAlt } from "@material-ui/icons";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
+import Head from "../components/Head";
 import Layout from "../components/Layout";
 import RecipeCart from "../components/RecipeCart";
 import Sidebar from "../components/Sidebar";
@@ -29,6 +30,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Head title="Home" />
       <Grid container className={styles.mainWrapper}>
         <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className={styles.left}>
           <h1>Delicious Food Recipes</h1>

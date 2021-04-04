@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import * as styles from "./recipes.module.scss";
 import { useStaticQuery, graphql } from "gatsby";
 import RecipeCart from "../components/RecipeCart";
+import Head from "../components/Head";
 
 const Recipes = () => {
   const data = useStaticQuery(graphql`
@@ -27,6 +28,7 @@ const Recipes = () => {
 
   return (
     <Layout>
+      <Head title="Recipes" />
       <Grid container className={styles.recipesWrapper}>
         <Grid
           item

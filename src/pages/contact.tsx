@@ -1,11 +1,13 @@
 import { Button, Grid } from "@material-ui/core";
 import React from "react";
+import Head from "../components/Head";
 import Layout from "../components/Layout";
 import TextInputField from "../components/TextField";
 import * as styles from "./contact.module.scss";
 
 const Contact = () => (
   <Layout>
+    <Head title="Contact" />
     <Grid container className={styles.mainContactPage}>
       <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className={styles.left}>
         <h1>Contact Now</h1>
